@@ -1,11 +1,32 @@
+body {
+    color: #1F1F1F;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #CCC;
+
+}
+
 .header__logo {
     width: 2rem;
     height: 2rem;
+    margin-left: 2rem;
+    border-radius: 20px;
 }
 
-.container {
+.header__titulo {
+    margin-left: 0.5rem;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container-news {
     display: grid;
-    width: 100%;
+    width: 90%;
+    margin: 0.7rem auto;
     grid-template-areas:
         "news relateds"
         "news relateds"
@@ -16,56 +37,226 @@
 
 .news {
     grid-area: news;
-    background-color: red;
 }
 
 .relateds {
     grid-area: relateds;
-    background-color: blue;
+}
+
+.novedadesPost__img {
+    width: 90%;
+    border-radius: 20px;
 }
 
 .post__autor {
     display: flex;
     align-items: center;
-  }
-  .post__autor--logoGrande {
+}
+
+.post__autor--logoGrande {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-  }
-  .post__autor--textoGrande {
+}
+
+.post__autor--textoGrande {
     font-size: 24px;
     font-weight: 500;
-  }
-  .post__autor--logoPeque {
+}
+
+.post__autor--logoPeque {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-  }
-  .post__autor--textoPeque {
+}
+
+.post__autor--textoPeque {
     font-size: 16px;
     font-weight: 500;
     margin-left: 1%;
-  }
+}
 
-  .subPost__contenido {
-    display: block;
-    position: relative;
-    left: 230px;
-    bottom: 160px;
-  }
-  
-  .subPost__fecha {
+.subPost {
+    display: flex;
+    margin-top: 3.5rem;
+}
+
+.subPost__contenido {
+    margin-left: 1rem;
+}
+
+.subPost__fecha {
     font-size: 16px;
     font-weight: 400;
-  }
-  
-  .subPost__titulo {
+    margin: 0;
+}
+
+.subPost__titulo {
     font-size: 20px;
-  }
-  
-  .subPost__img {
+    margin: 0;
+}
+
+.subPost__img {
     width: 50%;
-    height: 145px;
+    height: 135px;
     border-radius: 20px;
-  }
+}
+
+.container-populars {
+    display: grid;
+    width: 90%;
+    margin: 0.7rem auto;
+    grid-template-areas:
+        "populars categories"
+        "populars categories"
+        "populars categories";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.post__link {
+    text-decoration: none;
+    color: #171717;
+}
+
+.border {
+    border: 1px solid #CCC;
+}
+
+.populars {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.populares__titulo {
+    font-size: 28px;
+    margin-right: 100%;
+}
+
+.populares__post {
+    padding: 2rem;
+}
+
+.populares__imagen {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.popularesPost__fecha {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.popularesPost__titulo {
+    font-size: 20px;
+    margin: 0;
+}
+
+.categorias__titulo {
+    font-size: 28px;
+}
+
+.categorias__columna {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 300px;
+    height: 90px;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.categorias__html {
+    background-color: #E93E30;
+    border: 1px solid #E93E30;
+}
+
+.categorias__js {
+    background-color: #F7E018;
+    border: 1px solid #F7E018;
+}
+
+.categorias__css {
+    background-color: #299ED5;
+    border: 1px solid #299ED5;
+}
+
+.categorias__react {
+    background-color: #292C33;
+    border: 1px solid #292C33;
+}
+
+.categorias__vue {
+    background-color: #67C770;
+    border: 1px solid #67C770;
+}
+
+.categorias__bs {
+    background-color: #563D7C;
+    border: 1px solid #563D7C;
+}
+
+.container__img {
+    width: 33%;
+    height: 90%;
+    margin-left: 1%;
+}
+
+.categorias__texto {
+    font-size: 32px;
+}
+
+.categorias__todas {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #171717;
+}
+
+.relacionados {
+    width: 90%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__contenedor {
+    width: 20%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.footer__logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.footer__texto {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 2%;
+}
+
+.footer__creador {
+    width: 20%;
+}
+
+.footer__creadorTexto {
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 5%;
+}
